@@ -18,7 +18,9 @@ module.exports = {
       labelFormat: 'next',
     },
   },
-  swcMinify: true, // FYI: https://nextjs.org/docs/advanced-features/compiler#minification
+  // FYI: https://nextjs.org/docs/advanced-features/compiler#minification
+  // swcMinifyしない方が、buildサイズが小さいかった、、、
+  swcMinify: false,
   compiler: {
     // FYI: https://nextjs.org/docs/advanced-features/compiler#remove-console
     removeConsole: true,
