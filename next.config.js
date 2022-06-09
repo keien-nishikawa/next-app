@@ -19,7 +19,8 @@ module.exports = {
     },
   },
   // FYI: https://nextjs.org/docs/advanced-features/compiler#minification
-  swcMinify: true,
+  // swcMinifyしない方が、buildサイズが小さいかった、、、
+  swcMinify: false,
   compiler: {
     // FYI: https://nextjs.org/docs/advanced-features/compiler#remove-console
     removeConsole: true,
