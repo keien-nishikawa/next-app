@@ -11,13 +11,13 @@ module.exports = {
     return config;
   },
   // FYI: https://nextjs.org/docs/advanced-features/compiler#experimental-features
-  // experimental: {
-  //   emotion: {
-  //     sourceMap: true,
-  //     autoLabel: 'always',
-  //     labelFormat: 'next',
-  //   },
-  // },
+  experimental: {
+    emotion: {
+      sourceMap: true,
+      autoLabel: 'always',
+      labelFormat: 'next',
+    },
+  },
   // FYI: https://nextjs.org/docs/advanced-features/compiler#minification
   // swcMinifyしない方が、buildサイズが小さいかった、、、
   // 「https://pagespeed.web.dev」で計測するとfalseの方がパフォーマンスがいい
