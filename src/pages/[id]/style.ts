@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 
 export const container = css`
-  width: min(100%, 500px);
+  width: min(92.5% - 40px, 750px);
   margin: 5% auto;
   padding: 15px 20px;
   border: 1px solid #5c93bb2b;

@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
+import * as style from './style';
 
 export const Notistack: FC = () => {
   return (
-    <div>
-      <div></div>
+    <div css={style.container}>
+      <div>test</div>
     </div>
   );
 };

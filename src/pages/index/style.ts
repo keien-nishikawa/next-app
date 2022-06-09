@@ -7,7 +7,7 @@ export const container = css`
 `;
 
 export const card = css`
-  width: min(100%, 750px);
+  width: min(92.5% - 20px, 750px);
   margin: 15px auto;
   padding: 10px;
   border: 1px solid #5c93bb2b;

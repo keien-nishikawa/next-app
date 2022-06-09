@@ -2,6 +2,7 @@ import React, { FC, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { usePost } from 'src/hooks/usePost';
 import * as style from './style';
+import { AppComponent } from '@/components/AppComponent';
 
 const Page: FC = () => {
   const router = useRouter();
@@ -20,12 +21,14 @@ const Page: FC = () => {
 
   if (isLoading || !post) return null;
   return (
-    <div css={style.container}>
-      <div css={style.title}>
-        {post.id}. {post.title}
+    <AppComponent>
+      <div css={style.container}>
+        <div css={style.title}>
+          {post.id}. {post.title}
+        </div>
+        <div css={style.body}>{post.body}</div>
       </div>
-      <div css={style.body}>{post.body}</div>
-    </div>
+    </AppComponent>
   );
 };
 
