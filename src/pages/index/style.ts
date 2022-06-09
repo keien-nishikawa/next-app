@@ -7,9 +7,12 @@ export const container = css`
 `;
 
 export const card = css`
-  border: 1px #333 solid;
+  width: min(100%, 750px);
+  margin: 15px auto;
   padding: 10px;
-  margin: 5px;
+  border: 1px solid #5c93bb2b;
+  box-shadow: rgb(0 0 0 / 8%) 0px 6px 16px;
+  border-radius: 4px;
   :hover {
     cursor: pointer;
   }
