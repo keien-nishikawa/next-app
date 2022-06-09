@@ -20,6 +20,8 @@ module.exports = {
   },
   // FYI: https://nextjs.org/docs/advanced-features/compiler#minification
   // swcMinifyしない方が、buildサイズが小さいかった、、、
+  // 「https://pagespeed.web.dev」で計測するとfalseの方がパフォーマンスがいい
+  // build速度的はtrueの方が早い
   swcMinify: false,
   compiler: {
     // FYI: https://nextjs.org/docs/advanced-features/compiler#remove-console
