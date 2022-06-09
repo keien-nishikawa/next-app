@@ -10,4 +10,17 @@ module.exports = {
     });
     return config;
   },
+  // FYI: https://nextjs.org/docs/advanced-features/compiler#experimental-features
+  experimental: {
+    emotion: {
+      sourceMap: true,
+      autoLabel: 'always',
+      labelFormat: 'next',
+    },
+  },
+  swcMinify: true, // FYI: https://nextjs.org/docs/advanced-features/compiler#minification
+  compiler: {
+    // FYI: https://nextjs.org/docs/advanced-features/compiler#remove-console
+    removeConsole: true,
+  },
 };

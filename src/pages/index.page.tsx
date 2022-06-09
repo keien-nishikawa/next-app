@@ -23,14 +23,14 @@ const Page: FC = () => {
   if (posts.length === 0) return null;
   return (
     <AppComponent>
-      <div className={style.container}>NextApp</div>
+      <div css={style.container}>NextApp</div>
       {posts.map((post) => (
         <Link href={`${post.id}`}>
-          <div className={style.card} key={post.id}>
-            <div className={style.title}>
+          <div css={style.card} key={post.id}>
+            <div css={style.title}>
               {post.id}. {post.title}
             </div>
-            <div className={style.body}>{post.body}</div>
+            <div css={style.body}>{post.body}</div>
           </div>
         </Link>
       ))}

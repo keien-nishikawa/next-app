@@ -20,11 +20,11 @@ const Page: FC = () => {
 
   if (isLoading || !post) return null;
   return (
-    <div className={style.container}>
-      <div className={style.title}>
+    <div css={style.container}>
+      <div css={style.title}>
         {post.id}. {post.title}
       </div>
-      <div className={style.body}>{post.body}</div>
+      <div css={style.body}>{post.body}</div>
     </div>
   );
 };
