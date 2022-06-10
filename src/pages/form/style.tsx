@@ -7,8 +7,12 @@ export const container = css`
   padding: 10px;
   border: 1px solid #5c93bb2b;
   box-shadow: rgb(0 0 0 / 8%) 0px 6px 16px;
+  border-radius: 4px;
 `;
 
 export const formGroup = css`
   margin-top: 1rem;
+  :first-child {
+    margin-top: auto;
+  }
 `;
