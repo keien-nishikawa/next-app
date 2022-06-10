@@ -11,3 +11,7 @@ export const boxShadow = {
 export const borderColor = {
   def: '#5c93bb2b',
 };
+
+export const root = {
+  cPrimary: 'var(--c-primary)',
+};

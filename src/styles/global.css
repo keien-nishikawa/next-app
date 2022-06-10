@@ -1,0 +1,13 @@
+:root {
+  --c-primary: #519dd0;
+  --c-primary-light: #91c2e3;
+  --c-primary-dark: #1a7bbc;
+  --c-body-def: #333333;
+  --c-body-content: #3e3f48;
+  --c-button-txt-white: #fff;
+  --c-button-txt-danger: #f15e5e;
+  --c-button-bg-default: #519dd0;
+  --c-button-bg-disabled: #ccc;
+  --box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+  --box-shadow-light: rgb(0 0 0 / 8%) 0px 6px 16px;
+}
