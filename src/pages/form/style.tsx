@@ -8,3 +8,7 @@ export const container = css`
   border: 1px solid #5c93bb2b;
   box-shadow: rgb(0 0 0 / 8%) 0px 6px 16px;
 `;
+
+export const formGroup = css`
+  margin-top: 1rem;
+`;
