@@ -2,6 +2,7 @@
   --c-primary: #519dd0;
   --c-primary-light: #91c2e3;
   --c-primary-dark: #1a7bbc;
+  --c-bg: #fff;
   --c-white: #fff;
   --c-white2: #ccc;
   --c-danger: #f15e5e;
@@ -16,6 +17,7 @@ html[data-theme='light'] {
   --c-primary: #519dd0;
   --c-primary-light: #91c2e3;
   --c-primary-dark: #1a7bbc;
+  --c-bg: #fff;
   --c-white: #fff;
   --c-white2: #ccc;
   --c-danger: #f15e5e;
@@ -30,6 +32,7 @@ html[data-theme='dark'] {
   --c-primary: #f15e5e;
   --c-primary-light: #91c2e3;
   --c-primary-dark: #1a7bbc;
+  --c-bg: #1f2428;
   --c-white: #fff;
   --c-white2: #ccc;
   --c-danger: #f15e5e;
