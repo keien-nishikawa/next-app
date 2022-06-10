@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import { borderColor, boxShadow, fontColor } from '@/utils/style';
 
 export const container = css`
   font-size: 18px;
@@ -10,8 +11,8 @@ export const card = css`
   width: min(92.5% - 20px, 750px);
   margin: 15px auto;
   padding: 10px;
-  border: 1px solid #5c93bb2b;
-  box-shadow: rgb(0 0 0 / 8%) 0px 6px 16px;
+  border: 1px solid ${borderColor.def};
+  box-shadow: ${boxShadow.def};
   border-radius: 4px;
   :hover {
     cursor: pointer;
@@ -21,10 +22,10 @@ export const card = css`
 export const title = css`
   font-size: 16px;
   font-weight: 700;
-  color: red;
+  color: ${fontColor.red};
 `;
 
 export const body = css`
   font-size: 14px;
-  color: #333;
+  color: ${fontColor.def};
 `;
