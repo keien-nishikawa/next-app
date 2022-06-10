@@ -8,7 +8,7 @@
       "",
       "const Page: FC = () => {",
       "  return (",
-      "    <div className={style.container}>",
+      "    <div css={style.container}>",
       "      <div></div>",
       "    </div>",
       "  );",
@@ -26,7 +26,7 @@
       "",
       "export const ${1:$TM_FILENAME_BASE}: FC = () => {",
       "  return (",
-      "    <div className={style.container}>",
+      "    <div css={style.container}>",
       "      <div></div>",
       "    </div>",
       "  );",
@@ -35,15 +35,20 @@
     "description": "template of common component:共通コンポーネントの雛形"
   },
   "StyleSheet": {
-    "scope": "typescript",
+    "scope": "typescriptreact",
     "prefix": "style",
     "body": [
-      "import { css } from '@emotion/css';",
+      "import { css } from '@emotion/react';",
+      "import { borderColor, boxShadow } from '@/utils/styleUtil';",
       "",
       "export const container = css`",
       "  position: relative;",
-      "  width: min-content(500px, 100%);",
-      "  margin: 0 auto;",
+      "  width: min(95% - 20px, 500px);",
+      "  margin: 5% auto;",
+      "  padding: 10px;",
+      "  border: 1px solid ${borderColor.def};",
+      "  box-shadow: ${boxShadow.def};",
+      "  border-radius: 4px;",
       "`;\n"
     ],
     "description": "template of style sheet:styleの雛形"

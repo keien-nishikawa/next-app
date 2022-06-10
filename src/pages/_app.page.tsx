@@ -3,9 +3,13 @@ import type { AppProps } from 'next/app';
 import { RecoilRoot } from 'recoil';
 import { Notistack } from '@/components/Notistack';
 import '@/styles/reset.css';
+import '@/styles/global.css';
+import { useDarkMode } from '@/hooks/useDarkMode';
 
 //NOTE: 共通処理
 const AppInit: React.FC = () => {
+  useDarkMode();
+
   useEffect(() => {
     console.log('AppInit');
   }, []);
