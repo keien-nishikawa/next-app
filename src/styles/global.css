@@ -36,9 +36,9 @@ html[data-theme='dark'] {
   --c-white: #fff;
   --c-white2: #ccc;
   --c-danger: #f15e5e;
-  --c-body: #333333;
-  --c-body2: #3e3f48;
-  --c-border: #5c93bb2b;
+  --c-body: #fff;
+  --c-body2: #ccc;
+  --c-border: #ccc;
   --box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
   --box-shadow-light: rgb(0 0 0 / 8%) 0px 6px 16px;
 }

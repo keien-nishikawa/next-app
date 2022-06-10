@@ -33,7 +33,7 @@ export const title = css`
 
 export const body = css`
   font-size: 14px;
-  color: ${color.bodyDef};
+  color: ${color.cBody2};
 `;
 
 export const themeChangeBtn = css`
