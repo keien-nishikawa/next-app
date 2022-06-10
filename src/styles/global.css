@@ -29,16 +29,16 @@ html[data-theme='light'] {
 }
 
 html[data-theme='dark'] {
-  --c-primary: #f15e5e;
-  --c-primary-light: #91c2e3;
-  --c-primary-dark: #1a7bbc;
+  --c-primary: #f03748;
+  --c-primary-light: #ff6f74;
+  --c-primary-dark: #b60020;
   --c-bg: #1f2428;
   --c-white: #fff;
   --c-white2: #ccc;
-  --c-danger: #f15e5e;
+  --c-danger: #070707;
   --c-body: #fff;
   --c-body2: #ccc;
   --c-border: #ccc;
-  --box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
-  --box-shadow-light: rgb(0 0 0 / 8%) 0px 6px 16px;
+  --box-shadow: rgb(255 255 255 / 12%) 0px 6px 16px;
+  --box-shadow-light: rgb(255 255 255 / 8%) 0px 6px 16px;
 }
