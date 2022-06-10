@@ -12,7 +12,7 @@
   --box-shadow-light: rgb(0 0 0 / 8%) 0px 6px 16px;
 }
 
-body[data-theme='light'] {
+html[data-theme='light'] {
   --c-primary: #519dd0;
   --c-primary-light: #91c2e3;
   --c-primary-dark: #1a7bbc;
@@ -26,7 +26,7 @@ body[data-theme='light'] {
   --box-shadow-light: rgb(0 0 0 / 8%) 0px 6px 16px;
 }
 
-body[data-theme='dark'] {
+html[data-theme='dark'] {
   --c-primary: #f15e5e;
   --c-primary-light: #91c2e3;
   --c-primary-dark: #1a7bbc;
