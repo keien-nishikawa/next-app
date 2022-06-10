@@ -29,7 +29,7 @@ const Page: FC = () => {
       <div css={style.container}>
         <div css={style.app}>NextApp</div>
         <button css={style.themeChangeBtn} onClick={toggleDarkMode}>
-          To Dark mode
+          {isDarkMode ? 'To white theme' : 'To dark theme'}
         </button>
         {posts.map((post) => (
           <Link key={post.id} href={`${post.id}`}>
