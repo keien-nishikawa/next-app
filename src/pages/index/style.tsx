@@ -1,10 +1,10 @@
 import { css } from '@emotion/react';
-import { borderColor, boxShadow, fontColor } from '@/utils/style';
+import { borderColor, boxShadow, fontColor } from '@/utils/styleUtil';
 
 export const container = css`
   font-size: 18px;
   font-weight: 700;
-  color: #333;
+  color: ${fontColor.def};
 `;
 
 export const card = css`
