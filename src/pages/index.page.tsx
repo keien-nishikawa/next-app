@@ -4,11 +4,14 @@ import Link from 'next/link';
 import * as style from '@/pages/index/style';
 import { AppComponent } from '@/components/AppComponent';
 import { ErrorInfo } from '@/errors/ErrorInfo';
+import { useDarkMode } from '@/hooks/useDarkMode';
 
 const Page: FC = () => {
   const isRender = useRef<boolean>(false);
   const [err, setErr] = useState<null | ErrorInfo>(null);
   const { posts, getPosts } = usePost();
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
+  console.log('isDarkMode', isDarkMode);
 
   useEffect(() => {
     (async () => {
@@ -23,17 +26,22 @@ const Page: FC = () => {
   if (posts.length === 0) return null;
   return (
     <AppComponent>
-      <div css={style.container}>NextApp</div>
-      {posts.map((post) => (
-        <Link href={`${post.id}`}>
-          <div css={style.card} key={post.id}>
-            <div css={style.title}>
-              {post.id}. {post.title}
+      <div css={style.container}>
+        <div css={style.app}>NextApp</div>
+        <button css={style.themeChangeBtn} onClick={toggleDarkMode}>
+          To Dark mode
+        </button>
+        {posts.map((post) => (
+          <Link key={post.id} href={`${post.id}`}>
+            <div css={style.card}>
+              <div css={style.title}>
+                {post.id}. {post.title}
+              </div>
+              <div css={style.body}>{post.body}</div>
             </div>
-            <div css={style.body}>{post.body}</div>
-          </div>
-        </Link>
-      ))}
+          </Link>
+        ))}
+      </div>
     </AppComponent>
   );
 };

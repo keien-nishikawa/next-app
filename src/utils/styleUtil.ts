@@ -1,17 +1,17 @@
-export const fontColor = {
-  def: '#333',
-  red: 'red',
-};
-export const bgColor = {
-  def: '#fff',
-};
-export const boxShadow = {
-  def: 'rgb(0 0 0 / 8%) 0px 6px 16px',
-};
-export const borderColor = {
-  def: '#5c93bb2b',
+export const color = {
+  cPrimary: 'var(--c-primary)',
+  cPrimaryLight: 'var(--c-primary-light)',
+  cPrimaryDark: 'var(--c-primary-dark)',
+  cWhite: 'var(--c-white)',
+  cWhite2: 'var(--c-white2)',
+  cDander: 'var(--c-danger)',
+  cBody: 'var(--c-body)',
+  cBody2: 'var(--c-body2)',
+  bodyDef: 'var(--c-body-def)',
+  cBorder: 'var(--c-border)',
 };
 
-export const root = {
-  cPrimary: 'var(--c-primary)',
+export const boxShadow = {
+  def: 'var(--box-shadow)',
+  light: 'var(--box-shadow-light)',
 };
