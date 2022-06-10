@@ -8,7 +8,6 @@ export const color = {
   cDander: 'var(--c-danger)',
   cBody: 'var(--c-body)',
   cBody2: 'var(--c-body2)',
-  bodyDef: 'var(--c-body-def)',
   cBorder: 'var(--c-border)',
 };
 
