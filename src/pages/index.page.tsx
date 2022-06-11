@@ -32,7 +32,7 @@ const Page: FC = () => {
           {isDarkMode ? 'To white theme' : 'To dark theme'}
         </button>
         {posts.map((post) => (
-          <Link key={post.id} href={`/blog/${post.id}`}>
+          <Link key={post.id} href={`/article/${post.id}`}>
             <div css={style.card}>
               <div css={style.title}>
                 {post.id}. {post.title}
