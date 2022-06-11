@@ -20,6 +20,9 @@ export const contact = css`
   margin-bottom: 0;
   margin-top: 0;
   color: ${color.cBody};
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 export const form = css`

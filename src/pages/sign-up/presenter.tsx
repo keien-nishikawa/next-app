@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Link from 'next/link';
 import * as style from './style';
 import { useDefaultForm } from '@/hooks/useDefaultForm';
 import { TextInput } from '@/components/TextInput';
@@ -15,7 +16,9 @@ export const Presenter: FC = () => {
 
   return (
     <div css={style.container}>
-      <h1 css={style.contact}>アカウント登録</h1>
+      <Link href="/">
+        <h1 css={style.contact}>アカウント登録</h1>
+      </Link>
       <div css={style.form}>
         <div css={style.formGroup}>
           <TextInput type="text" {...register('displayName', { required: '名前を入力してください' })} autoFocus />
