@@ -30,7 +30,7 @@ const Page: FC = () => {
       <div css={style.container}>
         <div css={style.app}>NextApp</div>
         <button css={style.themeChangeBtn} onClick={toggleDarkMode}>
-          {isDarkMode ? 'To white theme' : 'To dark theme'}
+          {isDarkMode ? t.TO_LIGHT_MODE : t.TO_DARK_MODE}
         </button>
         <div css={style.lang}>
           <Link href="/" locale="en" passHref>
