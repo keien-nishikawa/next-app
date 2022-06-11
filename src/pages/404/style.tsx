@@ -10,16 +10,24 @@ export const container = css`
   justify-content: center;
 `;
 
-export const error = css`
-  color: ${color.cBody};
-`;
-
 export const code = css`
   font-size: 24px;
+  color: ${color.cBody};
   font-weight: bold;
 `;
 
 export const message = css`
   margin-top: 12px;
   font-size: 16px;
+  color: ${color.cBody2};
+`;
+
+export const appLink = css`
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: ${color.cPrimary};
+  :hover {
+    cursor: pointer;
+  }
 `;

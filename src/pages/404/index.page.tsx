@@ -1,12 +1,14 @@
 import { NextPage } from 'next';
+import Link from 'next/link';
 import * as style from './style';
 
 const Page: NextPage = () => (
   <div css={style.container}>
-    <div css={style.error}>
-      <h1 css={style.code}>404</h1>
-      <div css={style.message}>This page could not be found.</div>
-    </div>
+    <h1 css={style.code}>404</h1>
+    <div css={style.message}>This page could not be found.</div>
+    <a href="/" css={style.appLink}>
+      NextAppに戻る
+    </a>
   </div>
 );
 
