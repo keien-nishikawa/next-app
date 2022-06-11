@@ -11,6 +11,21 @@ export const container = css`
   border-radius: 4px;
 `;
 
+export const contact = css`
+  font-size: 24px;
+  line-height: 1.3333;
+  word-break: break-word;
+  padding-top: 16px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: ${color.cBody};
+`;
+
+export const form = css`
+  margin: 20px auto;
+`;
+
 export const formGroup = css`
   margin-top: 1rem;
   :first-child {

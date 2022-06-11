@@ -15,14 +15,17 @@ export const Presenter: FC = () => {
 
   return (
     <div css={style.container}>
-      <div css={style.formGroup}>
-        <TextInput type="text" {...register('displayName', { required: '件名を入力してください' })} autoFocus />
-      </div>
-      <div css={style.formGroup}>
-        <TextInput type="text" {...register('email', { required: 'メールアドレスを入力してください' })} />
-      </div>
-      <div css={style.formGroup}>
-        <TextInput type="text" {...register('password', { required: 'パスワードを入力してください' })} />
+      <h1 css={style.contact}>問い合わせフォーム</h1>
+      <div css={style.form}>
+        <div css={style.formGroup}>
+          <TextInput type="text" {...register('displayName', { required: '件名を入力してください' })} autoFocus />
+        </div>
+        <div css={style.formGroup}>
+          <TextInput type="text" {...register('email', { required: 'メールアドレスを入力してください' })} />
+        </div>
+        <div css={style.formGroup}>
+          <TextInput type="text" {...register('password', { required: 'パスワードを入力してください' })} />
+        </div>
       </div>
     </div>
   );
