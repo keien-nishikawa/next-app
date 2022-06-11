@@ -27,8 +27,18 @@ export const form = css`
 `;
 
 export const formGroup = css`
-  margin-top: 1rem;
+  margin-top: 25px;
   :first-child {
     margin-top: auto;
   }
+`;
+
+export const button = css`
+  color: ${color.cWhite};
+  background: ${color.cPrimary};
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
 `;

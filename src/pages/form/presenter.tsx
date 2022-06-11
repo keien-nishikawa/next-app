@@ -26,6 +26,11 @@ export const Presenter: FC = () => {
         <div css={style.formGroup}>
           <TextInput type="text" {...register('password', { required: 'パスワードを入力してください' })} />
         </div>
+        <div css={style.formGroup}>
+          <button css={style.button} type="submit">
+            送信
+          </button>
+        </div>
       </div>
     </div>
   );
