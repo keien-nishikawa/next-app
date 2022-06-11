@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import Link from 'next/link';
 import * as style from './style';
 
 const Page: NextPage = () => (
