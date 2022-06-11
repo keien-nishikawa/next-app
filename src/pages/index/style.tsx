@@ -46,3 +46,20 @@ export const themeChangeBtn = css`
     cursor: pointer;
   }
 `;
+
+export const lang = css`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`;
+
+export const langLink = css`
+  display: inline-block;
+  color: ${color.cPrimary};
+  :first-child {
+    margin-right: 10px;
+  }
+  :last-child {
+    margin-left: 10px;
+  }
+`;

@@ -1,17 +1,18 @@
 import React, { FC, useEffect, useRef, useState } from 'react';
 import { usePost } from 'src/hooks/usePost';
 import Link from 'next/link';
-import * as style from '@/pages/index/style';
 import { AppComponent } from '@/components/AppComponent';
 import { ErrorInfo } from '@/errors/ErrorInfo';
 import { useDarkMode } from '@/hooks/useDarkMode';
+import { useLocale } from '@/hooks/useLocale';
+import * as style from '@/pages/index/style';
 
 const Page: FC = () => {
   const isRender = useRef<boolean>(false);
   const [err, setErr] = useState<null | ErrorInfo>(null);
   const { posts, getPosts } = usePost();
   const { isDarkMode, toggleDarkMode } = useDarkMode();
-  console.log('isDarkMode', isDarkMode);
+  const { t } = useLocale();
 
   useEffect(() => {
     (async () => {
@@ -31,6 +32,14 @@ const Page: FC = () => {
         <button css={style.themeChangeBtn} onClick={toggleDarkMode}>
           {isDarkMode ? 'To white theme' : 'To dark theme'}
         </button>
+        <div css={style.lang}>
+          <Link href="/" locale="en" passHref>
+            <a css={style.langLink}>{t.TO_ENG}</a>
+          </Link>
+          <Link href="/" locale="ja" passHref>
+            <a css={style.langLink}>{t.TO_JA}</a>
+          </Link>
+        </div>
         {posts.map((post) => (
           <Link key={post.id} href={`/article/${post.id}`}>
             <div css={style.card}>

@@ -1,4 +1,8 @@
 module.exports = {
+  i18n: {
+    locales: ['en', 'ja'],
+    defaultLocale: 'ja',
+  },
   env: {
     APP_API_KEY: process.env.APP_API_KEY,
   },
