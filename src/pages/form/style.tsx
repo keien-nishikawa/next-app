@@ -41,4 +41,7 @@ export const button = css`
   font-size: 16px;
   border: none;
   border-radius: 4px;
+  :hover {
+    cursor: pointer;
+  }
 `;

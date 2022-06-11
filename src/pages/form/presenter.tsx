@@ -15,10 +15,10 @@ export const Presenter: FC = () => {
 
   return (
     <div css={style.container}>
-      <h1 css={style.contact}>問い合わせフォーム</h1>
+      <h1 css={style.contact}>アカウント登録</h1>
       <div css={style.form}>
         <div css={style.formGroup}>
-          <TextInput type="text" {...register('displayName', { required: '件名を入力してください' })} autoFocus />
+          <TextInput type="text" {...register('displayName', { required: '名前を入力してください' })} autoFocus />
         </div>
         <div css={style.formGroup}>
           <TextInput type="text" {...register('email', { required: 'メールアドレスを入力してください' })} />
@@ -28,7 +28,7 @@ export const Presenter: FC = () => {
         </div>
         <div css={style.formGroup}>
           <button css={style.button} type="submit">
-            送信
+            アカウントを作成する
           </button>
         </div>
       </div>
