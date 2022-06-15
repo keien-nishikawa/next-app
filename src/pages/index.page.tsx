@@ -8,11 +8,12 @@ import { useLocale } from '@/hooks/useLocale';
 import * as style from '@/pages/index/style';
 
 const Page: FC = () => {
+  const { t } = useLocale();
+  const index = t.index;
   const isRender = useRef<boolean>(false);
   const [err, setErr] = useState<null | ErrorInfo>(null);
   const { posts, getPosts } = usePost();
   const { isDarkMode, toggleDarkMode } = useDarkMode();
-  const { t } = useLocale();
 
   useEffect(() => {
     (async () => {
@@ -30,14 +31,14 @@ const Page: FC = () => {
       <div css={style.container}>
         <div css={style.app}>NextApp</div>
         <button css={style.themeChangeBtn} onClick={toggleDarkMode}>
-          {isDarkMode ? t.TO_LIGHT_MODE : t.TO_DARK_MODE}
+          {isDarkMode ? index.to_light : index.to_dark}
         </button>
         <div css={style.lang}>
           <Link href="/" locale="en" passHref>
-            <a css={style.langLink}>{t.TO_ENG}</a>
+            <a css={style.langLink}>{index.to_eng}</a>
           </Link>
           <Link href="/" locale="ja" passHref>
-            <a css={style.langLink}>{t.TO_JA}</a>
+            <a css={style.langLink}>{index.to_ja}</a>
           </Link>
         </div>
         {posts.map((post) => (
