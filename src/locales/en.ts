@@ -1,4 +1,7 @@
+import signup from './en/sign-up';
+
 export default {
+  signup: signup,
   BACK_TO_APP_URL: 'Back to NextApp',
   TO_ENG: 'To English',
   TO_JA: 'To Japanese',

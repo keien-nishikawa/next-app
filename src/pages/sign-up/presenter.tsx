@@ -3,6 +3,7 @@ import Link from 'next/link';
 import * as style from './style';
 import { useDefaultForm } from '@/hooks/useDefaultForm';
 import { TextInput } from '@/components/TextInput';
+import { useLocale } from '@/hooks/useLocale';
 
 type Form = {
   displayName: string;
@@ -10,6 +11,9 @@ type Form = {
   password: string;
 };
 export const Presenter: FC = () => {
+  const { t } = useLocale();
+  const signup = t.signup;
+  const required = signup.required;
   const { register } = useDefaultForm<Form>({
     defaultValues: { displayName: '', email: '', password: '' },
   });
@@ -17,21 +21,21 @@ export const Presenter: FC = () => {
   return (
     <div css={style.container}>
       <Link href="/">
-        <h1 css={style.contact}>アカウント登録</h1>
+        <h1 css={style.contact}>{signup.title}</h1>
       </Link>
       <div css={style.form}>
         <div css={style.formGroup}>
-          <TextInput type="text" {...register('displayName', { required: '名前を入力してください' })} autoFocus />
+          <TextInput type="text" {...register('displayName', { required: required.displayName })} autoFocus />
         </div>
         <div css={style.formGroup}>
-          <TextInput type="text" {...register('email', { required: 'メールアドレスを入力してください' })} />
+          <TextInput type="text" {...register('email', { required: required.email })} />
         </div>
         <div css={style.formGroup}>
-          <TextInput type="text" {...register('password', { required: 'パスワードを入力してください' })} />
+          <TextInput type="text" {...register('password', { required: required.password })} />
         </div>
         <div css={style.formGroup}>
           <button css={style.button} type="submit">
-            アカウントを作成する
+            {signup.submit}
           </button>
         </div>
       </div>
