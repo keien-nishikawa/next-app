@@ -1,3 +1,3 @@
 export default {
-  app_url: 'Back to NextApp',
+  app_url: 'NextAppに戻る',
 };
